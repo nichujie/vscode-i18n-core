@@ -61,7 +61,7 @@ const onExtract = async ({
   const i18n = i18nFile.getFileByFilepath(filepath)
 
   if (i18n.structureType === StructureType.DIR && key.indexOf('.') === -1) {
-    key = `common.${key}`
+    key = `translation.${key}`
   }
 
   // 重复检测
